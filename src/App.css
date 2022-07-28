@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-color: #0b2434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+}
+
+.main {
+  width: 550px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 100%;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 3.7rem);
+  place-content: center;
+  gap: 1.5rem;
+  grid-template-rows: repeat(2, 3.4rem);
+  place-content: center;
+}
+
+.dice {
+  color: #2b283a;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.roll-btn {
+  margin-top: 3rem;
+  width: 8rem;
+  height: 3rem;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: #5035ff;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 3.81277px;
+  border: none;
+  font-size: 1.3rem;
 }
-
-.App-link {
-  color: #61dafb;
+.title {
+  margin: 0;
+  font-size: 2.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instructions {
+  text-align: center;
+  color: #4a4e74;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.03em;
 }
